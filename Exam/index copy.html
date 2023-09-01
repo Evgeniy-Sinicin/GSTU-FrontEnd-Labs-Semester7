@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid #69c;
+        }
+
+        th {
+            font-weight: normal;
+            color: #039;
+            padding: 10px;
+        }
+
+        td {
+            color: #669;
+            border-top: 1px dashed white;
+            padding: 10px;
+            background: #ccddff;
+        }
+
+        tr:hover td {
+            background: #99bcff;
+        }
+
+        input[type=text]:focus {
+            background-color: lightblue;
+        }
+
+        input[type=button],
+        input[type=submit],
+        input[type=reset] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="processor" id='processorForm'>
+        <label>Frequency</label>
+        <input type="text" name="frequency" />
+
+        <label>Cores Number</label>
+        <input type="text" name="coresNumber" />
+
+        <label>Bit Depth</label>
+        <input type="text" name="bitDepth" />
+
+        <label>Technical Process</label>
+        <input type="text" name="technicalProcess" />
+
+        <input onclick="create()" type="button" value="Create Processor" />
+    </form>
+
+    <br />
+
+    <table>
+        <thead>
+            <tr>
+                <td>Frequency</td>
+                <td>Cores Number</td>
+                <td>Bit Depth</td>
+                <td>Technical Process</td>
+            </tr>
+        </thead>
+        <tbody id='tab'>
+
+        </tbody>
+    </table>
+
+    <script>
+        class Processor {
+            constructor(frequency, coresNumber, bitDepth, technicalProcess) {
+                this.frequency = frequency
+                this.coresNumber = coresNumber
+                this.bitDepth = bitDepth
+                this.technicalProcess = technicalProcess
+            }
+        }
+
+        var array = [];
+
+        function create() {
+            let form = document.forms.processor
+            let frequency = form.frequency.value
+            let coresNumber = form.coresNumber.value
+            let bitDepth = form.bitDepth.value
+            let technicalProcess = form.technicalProcess.value
+            let processor = new Processor(frequency, coresNumber, bitDepth, technicalProcess)
+            array.push(processor)
+
+            console.log(processor)
+            console.log(array)
+
+            update()
+        }
+
+        function update() {
+            let table = document.getElementById('tab')
+
+            table.innerHTML = ''
+
+            array.forEach(proc => {
+                table.innerHTML += '<tr> <td> ' + proc.frequency + ' </td> <td> ' + proc.coresNumber + ' </td> <td> ' + proc.bitDepth + ' </td> <td> ' + proc.technicalProcess + ' </td> </tr>'
+            });
+        }
+    </script>
+</body>
+
+</html>

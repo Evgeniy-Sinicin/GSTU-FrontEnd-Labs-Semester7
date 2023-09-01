@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>http://www.dd3bg.org/forum/index.php</p>
+    <label>Enter URL</label>
+    <input id="inp" type="text"/>
+    <button onclick="parse()">Parse</button>
+    <script>
+        class MyUrl
+        {
+            constructor(protocol, server, resource) {
+                this.protocol = protocol
+                this.server = server
+                this.resource = resource
+            }
+        }
+
+        function parse() {
+            let val = document.getElementById('inp').value
+            let url = new URL(val)
+            let myUrl = new MyUrl(url.protocol, url.hostname, url.pathname)
+            
+            console.log(JSON.stringify(myUrl))
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/Lab2.css">
+
+    <!-- JS -->
+    <script src="./js/Lab2.js"></script>
+</head>
+<body onload="sortDates(dates)">
+    <div>
+        <h1>Lab #2</h1>
+        <h2>Задание #2. Anagram</h2>
+        <input id="input-first" oninput="isAnagram()" placeholder="Enter text 1" type="text"/>
+        <input id="input-second" oninput="isAnagram()" placeholder="Enter text 2" type="text"/>
+        <div>
+            <h3>IS AN ANAGRAM?: <font id="font-answer-anagram" class="red">False</font></h3>
+        </div>
+    </div>
+    <div>
+        <h2>Задание #3. Removing volwes</h2>
+        <input id="input-for-removing-vowels" oninput="removeVowels(this.value)" placeholder="Enter text" type="text"/>
+        <font>Result: </font>
+        <font id="font-for-removing-vowels"></font>
+    </div>
+    <div>
+        <h2>Задание #7. Sorting</h2>
+        <input id="input-for-numbers-sort" oninput="bubbleSort(this.value)" placeholder="Enter a space separated array" type="text"/>
+        <font>Result: </font>
+        <font id="font-for-numbers-sort"></font>
+    </div>
+    <div>
+        <h2>Задание #10. Sorting dates</h2>
+        <div id="dates"></div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

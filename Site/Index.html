@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/Index.css">
+
+    <!-- JS -->
+    <script src="./js/Index.js"></script>
+
+    <title>FRONT-END LABS</title>
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/proxy/oXXVzBsKwiXVEV3nB5JyeuVJ-0GMiqw9HSWhFd-TMYdskQnfrAn-Dc6DIUJCpvCY_OTzGnTNeWm4SHbSw1BQXS4AGMb1EWPpoMlkcVxHwg" type="image/x-icon">
+  </head>
+  <body onload="setContent('http:/'+'/localhost:3000/')">
+    <aside id="header">
+        <img id="logo" src="./img/LOGO.png">
+    </aside>
+        
+    <header>
+        <p id="header">Современные технологии Front-end разработки</p>
+    </header>
+
+    <aside id="nav">
+        <p id="nav">NAVIGATION PANEL</p>
+        <nav>
+            <button onclick="setContent('./Lab1.html')" type="button" class="btn btn-outline-dark nav-btn">Lab #1</button>
+            <button onclick="setContent('./Lab2.html')" type="button" class="btn btn-outline-dark nav-btn">Lab #2</button>
+            <button onclick="setContent('./Lab3.html')" type="button" class="btn btn-outline-dark nav-btn">Lab #3</button>
+            <button onclick="setContent('./Lab4.html')" type="button" class="btn btn-outline-dark nav-btn">Lab #4</button>
+            <button onclick="setContent('./Lab5.html')" type="button" class="btn btn-outline-dark nav-btn">Lab #5</button>
+            <button onclick="setContent('http:/'+'/localhost:3000/')" type="button" class="btn btn-outline-dark nav-btn">Lab #6</button>
+        </nav>
+    </aside>
+        
+    <article>
+        <iframe id="frame" src="./Lab1.html" scrolling="no"></iframe>
+    </article>
+
+    <footer>
+        <nav id="nav-footer">
+            <a target="_blank" href="https://www.gstu.by/"><img class="img-footer" src="./img/GSTU.png">Сайт университета</a>
+            <a target="_blank" href="https://www.edu.gstu.by/"><img id="edu" class="img-footer" src="./img/EDU.png">Учебный портал</a>
+        </nav>
+        
+        <div id="copyright">
+            <p class="text-white">Разработчик:</p>
+            <p class="text-white">Синицин Е.В.</p>
+            <time class="text-white" datetime="2021-02-02">2 февраля 2021</time>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

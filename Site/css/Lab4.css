@@ -1,0 +1,148 @@
+* {
+    font-family: cursive;
+}
+
+.black {
+    color: black;
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+
+.block {
+    display: block;
+}
+
+.blue {
+    color: blue;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+button {
+    margin: 3pt;
+    font-size: 18pt;
+    min-width: 150px;
+    border-style: dashed;
+    border-radius: 25%;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.25s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 1px;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+}
+
+div#div-date {
+    display: flex;
+    justify-content: center;
+}
+
+div#div-menu {
+    justify-content: center;
+}
+
+div#div-current-tasks {
+    height: 375px;
+    overflow-y: auto;
+}
+
+div#div-subtasks {
+    height: 375px;
+    align-content: center;
+    overflow-y: auto;
+}
+
+div#div-tasks {
+    height: 475px;
+    overflow-y: auto;
+}
+
+.green {
+    color: green;
+    text-shadow: 1px 1px 2px black, 0 0 1em green;
+}
+
+.greenyellow {
+    color: greenyellow;
+    text-shadow: 1px 1px 2px black, 0 0 1em green;
+}
+
+h1, h2, h3, h4, p {
+    margin: 3pt;
+}
+
+input {
+    margin: 3pt;
+    font-size: 14pt;
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+p {
+    font-size: 14pt;
+}
+
+.red {
+    color: red;
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+
+table {
+    font-size:x-large;
+    display: inline;
+    justify-content: center;
+}
+
+.sky {
+    color: skyblue;
+    text-shadow: 1px 1px 2px black, 0 0 1em skyblue;
+}
+
+th, td {
+    padding-left: 15px;
+}
+
+.violet {
+    color: violet;
+    text-shadow: 1px 1px 2px black, 0 0 1em violet;
+}
+
+.white {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em white;
+}
+
+.yellow {
+    color: yellow;
+    text-shadow: 1px 1px 2px black, 0 0 1em yellow;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0); 
+    border-radius: 10px;
+}

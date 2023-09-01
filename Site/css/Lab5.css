@@ -1,0 +1,116 @@
+* {
+    font-family: cursive;
+}
+
+h1, h2, h3, h4, p {
+    margin: 3pt;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+}
+
+.black {
+    color: black;
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+
+.blue {
+    color: blue;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue;
+}
+
+.border {
+    list-style: none;
+    padding: 0;
+}
+    
+.border li {
+    font-family: "Trebuchet MS", "Lucida Sans";
+    padding: 7px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-left: 10px solid red; 
+    box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+               -2px -2px 5px 0 rgba(0,0,0,.1),
+                2px 2px 5px 0 rgba(0,0,0,.1),
+               -2px 2px 5px 0 rgba(0,0,0,.1);
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 100ms all linear;
+}
+
+.border li:nth-child(2){border-color: greenyellow;}
+.border li:nth-child(3){border-color: red;}
+.border li:nth-child(4){border-color: #1ccfc9;}
+.border li:nth-child(5){border-color: #493224;}
+.border li:hover {border-left: 10px solid transparent;}
+.border li:nth-child(1):hover {border-right: 10px solid red;}
+.border li:nth-child(2):hover {border-right: 10px solid greenyellow;}
+.border li:nth-child(3):hover {border-right: 10px solid yellow;}
+.border li:nth-child(4):hover {border-right: 10px solid #1ccfc9;}
+.border li:nth-child(5):hover {border-right: 10px solid #493224;}
+
+li, ul {
+    margin: 0em;
+}
+
+input {
+    padding: 0;
+    margin-left: 100pt;
+    font-size: 14pt;
+}
+
+.red {
+    color: red;
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+
+.greenyellow {
+    color: greenyellow;
+    text-shadow: 1px 1px 2px black, 0 0 1em green;
+}
+
+h3 {
+    text-align: center;
+}
+
+.yellow {
+    color: yellow;
+    text-shadow: 1px 1px 2px black, 0 0 1em yellow;
+}
+
+div#div-disciplines {
+    height: 275px;
+    overflow-y: scroll;
+}
+
+#div-input {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.material-icons {margin-top:.5em}
+.example-1 .form-group{padding:0.5em;margin:.25em;}
+.example-1 input[type=file]{outline:0;opacity:0;pointer-events:none;user-select:none}
+.example-1 .label{width:12.5em;border:2px dashed black;border-radius:5px;display:block;padding:0.5em;transition:border 300ms ease;cursor:pointer;text-align:center}
+.example-1 .label i{display:block;font-size:42px}
+.example-1 .label i,.example-1 .label .title{color:yellow;transition:300ms color;text-shadow: 1px 1px 2px black, 0 0 1em yellow;}
+.example-1 .label:hover{border:2px solid yellow}
+.example-1 .label:hover i,.example-1 .label:hover .title{color:white}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0); 
+    border-radius: 10px;
+}

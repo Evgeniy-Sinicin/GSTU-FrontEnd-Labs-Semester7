@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/Lab4.css">
+
+    <!-- JS -->
+    <script src="./js/Lab4.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Lab #4</h1>
+    </div>
+
+    <div id="div-menu">
+        <div>
+            <button onclick="onCreatingTaskViewButtonClick()">
+                <font class="yellow">Show</font> creating task menu
+            </button>
+        </div>
+
+        <div>
+            <button onclick="onTasksMenuButtonClick()">
+                <font class="yellow">Show</font> tasks
+            </button>
+        </div>
+
+        <div>
+            <button onclick="onCurrentTasksMenuButtonClick()">
+                <font class="yellow">Show</font> current tasks
+            </button>
+        </div>
+    </div>
+
+    <div id="div-task-creating" style="display: none;">
+        <h2>Creating <font id="font-task-creating" class="yellow">Task</font>
+        </h2>
+
+        <input id="input-name" placeholder="Name" type="text" />
+        <input id="input-description" placeholder="Description" type="text" />
+
+        <div id="div-date">
+            <span>
+                <label>
+                    <font class="yellow">Start Date</font>
+                </label>
+                <input id="input-start-date" type="date" />
+            </span>
+
+            <span>
+                <label>
+                    <font class="yellow">Finish Date</font>
+                </label>
+                <input id="input-finish-date" type="date" />
+            </span>
+        </div>
+
+        <button id="btn-create-task" onclick="onCreateTaskButtonClick()">
+            <font class="black">Create </font>
+            <font class="blue">new </font>
+            <font class="green">Task()</font>
+        </button>
+        <button id="btn-cancel-creating-task" onclick="onCancelCreatingTaskButtonClick()">
+            <font class="red">Cancel</font>
+        </button>
+    </div>
+
+    <div id="div-subtask-creating" style="display: none;">
+        <h2>Creating <font id="font-subtask-creating" class="yellow">Subtask</font>
+        </h2>
+
+        <input id="input-subtask-name" placeholder="Name" type="text" />
+        <input id="input-subtask-description" placeholder="Description" type="text" />
+
+        <div id="div-date">
+            <span>
+                <label>
+                    <font class="yellow">Start Date</font>
+                </label>
+                <input id="input-subtask-start-date" type="date" />
+            </span>
+
+            <span>
+                <label>
+                    <font class="yellow">Finish Date</font>
+                </label>
+                <input id="input-subtask-finish-date" type="date" />
+            </span>
+        </div>
+
+        <button id="btn-create-subtask" onclick="onCreateSubtaskButtonClick()">
+            <font class="black">Create </font>
+            <font class="blue">new </font>
+            <font class="green">Subtask()</font>
+        </button>
+        <button id="btn-cancel-creating-subtask" onclick="onCancelCreatingSubtaskButtonClick()">
+            <font class="red">Cancel</font>
+        </button>
+    </div>
+
+    <div id="div-tasks" style="display: none;">
+        <table id="table-tasks">
+            <caption>
+                <font class="red bold">Tasks:</font>
+            </caption>
+
+            <tr>
+                <th>Current Task</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Start Date</th>
+                <th>Finish Date</th>
+                <th>Add Subtask</th>
+                <th>Show Subtasks</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div-subtasks" style="display: none;">
+        <table id="table-subtasks">
+            <caption>
+                <font class="red bold">Subtasks:</font>
+            </caption>
+
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Start Date</th>
+                <th>Finish Date</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div-current-tasks" style="display: none;">
+        <table id="table-current-tasks">
+            <caption>
+                <font class="red bold">Current tasks:</font>
+            </caption>
+
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Start Date</th>
+                <th>Finish Date</th>
+                <th>Ready %</th>
+                <th>Is Complete?</th>
+                <th>Change Progress</th>
+                <th>Add Subtask</th>
+                <th>Subtasks</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div-changing-progress" style="display: none;">
+        <h2>
+            <font class="yellow">Changing progress</font>
+        </h2>
+
+        <h3>
+            Current progress:
+            <font id="font-current-progress" class="red">0%</font>
+        </h3>
+
+        <div>
+            <input id="input-progress" placeholder="Enter new progress" type="text" />
+        </div>
+
+        <button onclick="onProgressChangingButtonClick()">
+            <font class="greenyellow">Change</font>
+        </button>
+        <button onclick="onCancelProgressChangingButtonClick()">
+            <font class="red">Cancel</font>
+        </button>
+    </div>
+</body>
+
+</html>

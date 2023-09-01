@@ -1,0 +1,53 @@
+* {
+    font-family: cursive;
+}
+
+button {
+    font-size: 14pt;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 1px;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+}
+
+font {
+    font-size: 14pt;
+}
+
+.green {
+    color: green;
+    text-shadow: 1px 1px 2px black, 0 0 1em green;
+}
+
+h1, h2, h3, h4 {
+    margin: 10px;
+}
+
+input {
+    font-size: 14pt;
+    text-align: center;
+}
+
+p {
+    font-size: 14pt;
+    margin: 0;
+}
+
+.red {
+    color: red;
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+
+.yellow {
+    color: yellow;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0);
+}

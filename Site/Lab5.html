@@ -1,0 +1,55 @@
+<!-- Hot keys
+    Shift + Alt + F = Code Aligning
+    CTRL + K + CTRL + J => РАЗВЕРНУТЬ ВСЕ БЛОКИ
+    CTRL + K + CTRL + 0 => СВЕРНУТЬ ВСЕ БЛОКИ 
+-->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/Lab5.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body onload="onBodyLoad()">
+    <h1 class="align-center">Lab #5</h1>
+
+    <h2 class="align-center">
+        <font class="yellow">Choose&nbsp;</font>
+        Record File
+    </h2>
+    <div class="align-center">
+        <div class="example-1">
+            <div class="form-group">
+                <label id="div-input" class="label">
+                    <i class="material-icons">attach_file</i>
+                    <span class="title">
+                        <h3><font class="yellow">Attach Record File</font></h3>
+                    </span>
+                    <input onchange="readFile(this)" type="file">
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="align-center">
+        <font class="yellow">Disciplines&nbsp;</font>
+        and&nbsp;
+        <font class="yellow">Remaining labs&nbsp;</font>
+        on the&nbsp;
+        <font id="font-current-date" class="greenyellow">CURRENT DATE</font>
+        :
+    </h2>
+
+    <div id="div-disciplines" class="align-center">
+    </div>
+
+    <!-- JS -->
+    <script src="./js/Lab5.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+{
+    "fio": {
+        "surname": "Sinicin",
+        "name": "Evgeniy",
+        "middlename": "Vital'evich"
+    },
+    "faculty": "FAIS",
+    "specialty": "Programmer",
+    "disciplines": [
+        {
+            "name": "Front-end",
+            "labs": [
+                {
+                    "name": "Lab_#3",
+                    "deliveryDate": "2021-02-19T14:54:07.985Z",
+                    "rating": 7
+                },
+                {
+                    "name": "Lab_#4",
+                    "deliveryDate": "2021-02-20T14:54:07.985Z",
+                    "rating": 7
+                },
+                {
+                    "name": "Lab_#5",
+                    "deliveryDate": "2021-02-25T14:54:07.985Z",
+                    "rating": 7
+                }
+            ]
+        },
+        {
+            "name": "OOP",
+            "labs": [
+                {
+                    "name": "Lab_#1",
+                    "deliveryDate": "2021-02-13T14:54:07.985Z",
+                    "rating": 9
+                },
+                {
+                    "name": "Lab_#3",
+                    "deliveryDate": "2021-02-19T14:54:07.985Z",
+                    "rating": 7
+                }
+            ]
+        }
+    ]
+}

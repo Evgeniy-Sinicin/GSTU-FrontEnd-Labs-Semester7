@@ -1,0 +1,74 @@
+* {
+    font-family: cursive;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+button {
+    font-size: 14pt;
+}
+
+div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 1px;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+}
+
+div#div-task3 {
+    display: flex;
+    justify-content: center;
+}
+
+div#div-task4 {
+    height: 80px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, p {
+    margin: 3pt;
+}
+
+input {
+    font-size: 14pt;
+    text-align: center;
+}
+
+p, font {
+    font-size: 14pt;
+}
+
+span {
+    margin: 1.5pt;
+}
+
+.black {
+    color: black;
+    text-shadow: 1px 1px 2px white, 0 0 1em black;
+}
+
+.yellow {
+    color: yellow;
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0); 
+    border-radius: 10px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/Lab3.css">
+
+    <!-- JS -->
+    <script src="./js/Lab3.js"></script>
+</head>
+<body onload="task1() | task2() | task4()">
+    <div>
+        <h1>Lab #3</h1>
+    </div>
+    <div>
+        <h2>Задание #1</h2>
+        <p>
+            <font class="yellow bold">Initial array:</font>
+            <font id="font-initial-task1"></font>
+        </p>
+        <p>
+            <font class="yellow bold">Codes array: </font>
+            <font id="font-code-task1"></font>
+        </p>
+        <p>
+            <font class="yellow bold">Not divisible by 5: </font>
+            <font id="font-divisible-task1"></font>
+        </p>
+        <p>
+            <font class="yellow bold">Result: </font>
+            <font id="font-answer-task1"></font>
+        </p>
+    </div>
+    <div>
+        <h2>Задание #2</h2>
+        <input value="-100" oninput="task2()" id="inp-min-task2" type="text" placeholder="Min number"/>
+        <input value="100" oninput="task2()" id="inp-max-task2" type="text" placeholder="Max number"/>
+        <p>
+            <font class="yellow bold">Initial array: </font>
+            <font id="font-initial-task2"></font>
+        </p>
+        <span>
+            <font class="yellow bold">Divisible by 10: </font>
+            <font id="font-divisible-task2"></font>
+        </span>
+        <span>
+            <font class="yellow bold">Sorted array: </font>
+            <font id="font-sorted-task2"></font>
+        </span>
+    </div>
+    <div>
+        <h2>Задание #3</h2>
+        <div id="div-task3">
+            <span>
+                <input oninput="onArithmeticMeanInput(this.value)" type="text" placeholder="Arithmetic mean arguments"/>
+                <p>
+                    <font class="yellow bold">Arithmetic mean: </font>
+                    <font id="font-arithmetic-mean-task3">0</font>
+                </p>
+            </span>
+            <span>
+                <input oninput="onHarmonicMeanInput(this.value)" type="text" placeholder="Harmonic mean arguments"/>
+                <p>
+                    <font class="yellow bold">Harmonic mean: </font>
+                    <font id="font-harmonic-mean-task3">0</font>
+                </p>
+            </span>
+        </div>
+    </div>
+    <div>
+        <h2>Задание #4</h2>
+        <div id="div-task4">
+            <p id="p-task4"></p>
+        </div>
+    </div>
+</body>
+</html>
